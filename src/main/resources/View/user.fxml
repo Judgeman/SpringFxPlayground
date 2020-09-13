@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="userPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserController">
+    <ImageView fitHeight="100.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../img/Stabilo.png" />
+        </image></ImageView>
+    <Label fx:id="LOGINTEXTLABEL" layoutX="200.0" layoutY="167.0" prefHeight="30.0" prefWidth="400.0" styleClass="userTitle">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="USERFIELD" layoutX="200.0" layoutY="217.0" prefHeight="30.0" prefWidth="400.0" promptText="Username" styleClass="userField">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </TextField>
+    <PasswordField fx:id="PASSFIELD" layoutX="200.0" layoutY="270.0" prefHeight="30.0" prefWidth="400.0" promptText="Password" styleClass="passField">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </PasswordField>
+    <Button fx:id="EINLOGGENBUTTON" alignment="CENTER" layoutX="200.0" layoutY="350.0" mnemonicParsing="false" onAction="#einloggen" prefHeight="30.0" prefWidth="400.0" styleClass="loginButton" text="Einloggen">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Button>
+    <Button fx:id="REGISTBUTTON" alignment="CENTER" layoutX="200.0" layoutY="404.0" mnemonicParsing="false" onAction="#registrieren" prefHeight="30.0" prefWidth="400.0" styleClass="registButton" text="Registriere">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Button>
+    <Hyperlink fx:id="LOGINABBRECHEN" layoutX="200.0" layoutY="554.0" onAction="#abbrechen" prefHeight="25.0" prefWidth="100.0" text="Abbrechen" />
+    <Hyperlink fx:id="PASSVERGESSEN" alignment="CENTER_RIGHT" layoutX="450.0" layoutY="554.0" onAction="#passrecovery" prefHeight="25.0" prefWidth="150.0" text="Password vergessen" />
+</AnchorPane>

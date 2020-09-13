@@ -1,0 +1,41 @@
+/* 3.09.2020 */
+
+/* preload.fxml
+ -----------------*/
+.preloadPane {
+
+    -fx-background-image: url("../img/Combi.jpg") ;
+}
+.preloadTitle {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFD700;
+    /*
+    -fx-font-weight: bold;
+    -fx-font-letter-spacing: 1em;
+    */
+}
+
+.preloadVersion {
+    -fx-text-fill: white;
+}
+
+.linieY {
+
+}
+
+.linieX {
+
+}
+
+.preloadProzent {
+    -fx-text-fill: #FFF;
+}
+
+/* user.fxml
+ ----------------*/
+.userPane {
+    -fx-background-image: url("../img/Selenium.jpg") ;
+}
+.userTitle {
+    -fx-text-fill: #33CC33;
+}

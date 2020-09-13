@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="preloadPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PreloadController">
+      <Pane prefHeight="400.0" prefWidth="600.0">
+            <Line endX="60.0" endY="10.0" startX="60.0" startY="364.0" stroke="#521de4" strokeWidth="5.0" styleClass="linieY" />
+            <Line endX="10.0" endY="316.5" startX="590.0" startY="316.5" stroke="#521de4" strokeWidth="5.0" styleClass="linieX" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="140.0" layoutY="70.0" prefHeight="30.0" prefWidth="300.0" style="-fx-font-weight: bold;" styleClass="preloadTitle" text="SpringFxPlayGround">
+               <font>
+                  <Font size="20.0" />
+               </font>
+         <effect>
+            <Glow />
+         </effect>
+            </Label>
+            <Label layoutX="195.0" layoutY="100.0" prefHeight="17.0" prefWidth="113.0" styleClass="preloadVersion" text="Version 1.0" />
+            <ProgressBar fx:id="progressBar" layoutX="74.0" layoutY="265.0" prefHeight="10.0" prefWidth="450.0" styleClass="progress">
+            </ProgressBar>
+            <Label fx:id="PROZENT" layoutX="533.0" layoutY="260.0" prefHeight="20.0" prefWidth="50.0" styleClass="preloadProzent" />
+            <Label alignment="CENTER_RIGHT" layoutX="393.0" layoutY="332.0" prefHeight="20.0" prefWidth="200.0" text=" @ 2020  Play Group" />
+      </Pane>
+</AnchorPane>
